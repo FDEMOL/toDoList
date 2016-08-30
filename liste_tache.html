@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.css">
+        <link rel="stylesheet" href="style.css" />
+        <link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
+        <title>ToDoList</title>
+    </head>
+
+  <body>
+
+    <div id="bloc_page">
+      <header>
+          <div id="titre_principal">
+              <nav>
+              <ul>
+                  <li><a href="index.html" class="hvr-underline-from-left" >Créer une tâche</a></li>
+                  <li><a href="#" class="hvr-underline-from-left lien_haut">Liste des tâches</a></li>
+                  <li><a href="#" class="hvr-underline-from-left">Se Connecter</a></li>
+              </ul>
+          </nav>
+          </div>
+      </header>
+
+     <div id="tab_tache"> 
+      <table>
+        <thead>
+          <tr>
+            <th>Tache</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Date de création</th>
+            <th>Date butoir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr href='#'>
+              <td>1</td>
+              <td>titre tache</td>
+              <td>desc tache</td>
+              <td>date_crea</td>
+              <td>date fin</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+    <div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            $('tbody > tr').on('click', function(e){
+              window.open($(this).attr('href'));
+            });
+        });
+    </script>
+  </body>
+</html>  

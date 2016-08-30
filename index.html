@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.css">
+        <link rel="stylesheet" href="style.css" />
+        <link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
+        <title>ToDoList</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <nav>
+                    <ul>
+                        <li><a href="index.html" class="hvr-underline-from-left" >Créer une tâche</a></li>
+                        <li><a href="liste_tache.html" class="hvr-underline-from-left lien_haut">Liste des tâches</a></li>
+                        <li><a href="#" class="hvr-underline-from-left">Se Connecter</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+
+            <br>
+            <br>
+            <br>
+            
+            <div id="formulaire">
+                <section>
+                    <fieldset>
+                        <form method="post" action="tache.php">
+                            <legend> Création d'une tâche </legend>
+                            <br>
+                            <br>
+                            <br>
+                            <label for="titre_tache">Titre de la tâche :</label>
+                            <input type="text" name="titre_tache" id="titre_tache" size="50" maxlength="40"  />
+                            <br>
+                            <br>
+                            <label for="desc_tache" >Description de la tâche :</label>
+                            <textarea name="desc_tache" id="desc_tache" cols="60" rows="10"></textarea>
+                            <br>
+                            <br>
+                            <label for="date_fin">Date de fin :</label>
+                            <input type="date" name="date_fin" id="date_fin" />
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <input id="btn_cre_tache" type="submit" name="btn_creation_tache" value="Créer la tâche" >
+                        </form>
+                    </fieldset>
+                </section>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <footer>
+                <div id="tweet">
+                    <p>Créer par Flo -- Expert Oracle</p>
+                </div>
+            </footer>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            console.log('test')
+        });
+    </script>
+    </body>
+</html>
+
